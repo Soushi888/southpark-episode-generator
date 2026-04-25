@@ -1,0 +1,40 @@
+:root {
+  font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #0a0a14;
+  background-image:
+    radial-gradient(ellipse 100% 50% at 50% 0%, #16163a 0%, transparent 65%),
+    radial-gradient(ellipse 60% 30% at 20% 80%, #0f1a0f 0%, transparent 50%);
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 38vh;
+  background: url('/mountains.svg') center bottom / cover no-repeat;
+  pointer-events: none;
+  z-index: 0;
+}
+
+main, #svelte > * {
+  position: relative;
+  z-index: 1;
+}
+
+.sp-logo {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 0.06em;
+  -webkit-text-stroke: 2px #000;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000;
+}
+
+.sp-heading {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 0.04em;
+}
