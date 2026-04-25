@@ -16,9 +16,6 @@
 
   const allEpisodes = episodesData as Episode[]
 
-  // Router isn't ready during the first $effect run (before onMount).
-  // Once onMount fires, ready = true triggers $effect to re-run and
-  // subsequent state changes sync the URL normally.
   let ready = $state(false)
 
   onMount(() => {
@@ -28,8 +25,6 @@
       const found = allEpisodes.find((e) => e.id === episodeId)
       if (found) episodeStore.current = found
     }
-    // Defer past SvelteKit's initialize() so the router is assigned before
-    // the $effect below first calls replaceState.
     setTimeout(() => { ready = true }, 0)
   })
 
@@ -62,25 +57,37 @@
 
 <svelte:window onkeydown={handleKeydown} />
 
-<main class="min-h-screen flex flex-col items-center px-4 py-12 gap-8 pb-48">
-  <header class="text-center select-none">
+<main class="min-h-screen px-4 pt-10 pb-48">
+  <header class="text-center select-none mb-10">
     <h1 class="sp-logo text-6xl text-sp-yellow mb-1">🏔 SOUTH PARK</h1>
     <p class="sp-heading text-lg text-white/50 tracking-widest">RANDOM EPISODE GENERATOR</p>
   </header>
 
-  <RandomPicker onSpin={handleSpin} />
+  <div class="max-w-6xl mx-auto lg:grid lg:grid-cols-2 lg:gap-10 lg:items-start flex flex-col items-center gap-8">
+    <!-- Left: sticky picker + card -->
+    <div class="w-full max-w-2xl flex flex-col gap-6 lg:sticky lg:top-8">
+      <RandomPicker onSpin={handleSpin} />
 
-  {#if episodeStore.current}
-    <EpisodeCard episode={episodeStore.current} />
-  {:else}
-    <div class="card-base max-w-2xl w-full text-center py-12 text-white/30">
-      <p class="text-5xl mb-4">🎲</p>
-      <p class="font-semibold">Hit the button to discover a random episode</p>
-      <p class="text-sm mt-1 text-white/20">or press Space</p>
+      {#if episodeStore.current}
+        <EpisodeCard episode={episodeStore.current} />
+      {:else}
+        <div class="card-base max-w-2xl w-full text-center py-14 text-white/50 flex flex-col items-center gap-4">
+          <p class="text-6xl animate-bounce" style="animation-duration: 2s">🎲</p>
+          <div>
+            <p class="font-bold text-lg text-white/60">Spin the wheel</p>
+            <p class="text-sm text-white/40 mt-1">{filterStore.count} episodes across 28 seasons<br>ready to be discovered</p>
+          </div>
+          <button class="btn-spin text-xl mt-2" onclick={handleSpin}>
+            🎲 Pick an Episode
+          </button>
+        </div>
+      {/if}
     </div>
-  {/if}
 
-  <FilterPanel />
-
-  <EpisodeList episodes={filterStore.filtered} />
+    <!-- Right: filters + episode list -->
+    <div class="w-full max-w-2xl flex flex-col gap-6">
+      <FilterPanel />
+      <EpisodeList episodes={filterStore.filtered} />
+    </div>
+  </div>
 </main>

@@ -17,7 +17,7 @@ body::after {
   left: 0;
   right: 0;
   height: 38vh;
-  background: url('/mountains.svg') center bottom / cover no-repeat;
+  background: url('/southpark-episode-generator/mountains.svg') center bottom / cover no-repeat;
   pointer-events: none;
   z-index: 0;
 }
@@ -37,4 +37,37 @@ main, #svelte > * {
 .sp-heading {
   font-family: 'Bangers', cursive;
   letter-spacing: 0.04em;
+}
+
+/* Custom range slider */
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+  cursor: pointer;
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ffc20e;
+  border: 3px solid #000;
+  cursor: grab;
+  transition: transform 0.1s;
+}
+input[type='range']::-webkit-slider-thumb:active {
+  cursor: grabbing;
+  transform: scale(1.2);
+}
+input[type='range']::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ffc20e;
+  border: 3px solid #000;
+  cursor: grab;
 }
