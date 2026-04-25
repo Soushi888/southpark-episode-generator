@@ -20,6 +20,7 @@ body::after {
   background: url('/southpark-episode-generator/mountains.svg') center bottom / cover no-repeat;
   pointer-events: none;
   z-index: 0;
+  opacity: 0.2;
 }
 
 main, #svelte > * {
