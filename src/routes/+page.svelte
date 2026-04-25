@@ -13,6 +13,7 @@
   import RandomPicker from '$lib/components/RandomPicker.svelte'
   import FilterPanel from '$lib/components/FilterPanel.svelte'
   import EpisodeList from '$lib/components/EpisodeList.svelte'
+  import SeenList from '$lib/components/SeenList.svelte'
 
   const allEpisodes = episodesData as Episode[]
 
@@ -87,6 +88,7 @@
     <!-- Right: filters + episode list -->
     <div class="w-full max-w-2xl flex flex-col gap-6">
       <FilterPanel />
+      <SeenList />
       <EpisodeList episodes={filterStore.filtered} />
     </div>
   </div>
