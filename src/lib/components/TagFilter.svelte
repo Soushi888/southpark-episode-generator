@@ -4,8 +4,8 @@
 
   const ALL_TAGS: EpisodeTag[] = [
     'classic', 'controversial', 'cartman-centric', 'kenny-dies',
-    'randy-centric', 'butters-centric', 'movie-length', 'season-finale',
-    'holiday', 'celebrity-parody', 'meta', 'trilogy'
+    'randy-centric', 'butters-centric', 'garrison-centric', 'movie-length',
+    'season-finale', 'holiday', 'celebrity-parody', 'meta', 'trilogy'
   ]
 
   function toggleTag(tag: EpisodeTag) {
