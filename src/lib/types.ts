@@ -13,6 +13,7 @@ export type EpisodeTag =
   | 'celebrity-parody'
   | 'meta'
   | 'trilogy'
+  | 'garrison-centric'
 
 export type Episode = {
   id: EpisodeId

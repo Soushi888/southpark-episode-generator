@@ -35,7 +35,8 @@
     "tags": [
       "kenny-dies",
       "celebrity-parody",
-      "classic"
+      "classic",
+      "garrison-centric"
     ]
   },
   {
@@ -216,7 +217,8 @@
     "tags": [
       "kenny-dies",
       "holiday",
-      "classic"
+      "classic",
+      "garrison-centric"
     ]
   },
   {
@@ -407,7 +409,8 @@
     "tags": [
       "kenny-dies",
       "holiday",
-      "classic"
+      "classic",
+      "garrison-centric"
     ]
   },
   {
@@ -528,7 +531,8 @@
     "tags": [
       "kenny-dies",
       "celebrity-parody",
-      "classic"
+      "classic",
+      "garrison-centric"
     ]
   },
   {
@@ -944,7 +948,8 @@
     ],
     "tags": [
       "season-finale",
-      "classic"
+      "classic",
+      "garrison-centric"
     ]
   },
   {
@@ -1089,7 +1094,8 @@
     ],
     "tags": [
       "kenny-dies",
-      "classic"
+      "classic",
+      "garrison-centric"
     ]
   },
   {
@@ -1195,7 +1201,8 @@
     ],
     "tags": [
       "kenny-dies",
-      "classic"
+      "classic",
+      "garrison-centric"
     ]
   },
   {
@@ -1217,7 +1224,8 @@
     "tags": [
       "kenny-dies",
       "holiday",
-      "classic"
+      "classic",
+      "garrison-centric"
     ]
   },
   {
@@ -1531,7 +1539,8 @@
     "tags": [
       "kenny-dies",
       "celebrity-parody",
-      "classic"
+      "classic",
+      "garrison-centric"
     ]
   },
   {
@@ -1870,7 +1879,8 @@
       "Randy"
     ],
     "tags": [
-      "classic"
+      "classic",
+      "garrison-centric"
     ]
   },
   {
@@ -2092,7 +2102,8 @@
     ],
     "tags": [
       "celebrity-parody",
-      "classic"
+      "classic",
+      "garrison-centric"
     ]
   },
   {
@@ -2527,7 +2538,9 @@
       "Butters",
       "Craig"
     ],
-    "tags": []
+    "tags": [
+      "garrison-centric"
+    ]
   },
   {
     "id": "S09E02",
@@ -2700,7 +2713,9 @@
       "Kenny",
       "Randy"
     ],
-    "tags": []
+    "tags": [
+      "garrison-centric"
+    ]
   },
   {
     "id": "S09E11",
@@ -3014,7 +3029,8 @@
     ],
     "tags": [
       "trilogy",
-      "cartman-centric"
+      "cartman-centric",
+      "garrison-centric"
     ]
   },
   {
@@ -3032,7 +3048,8 @@
     ],
     "tags": [
       "trilogy",
-      "cartman-centric"
+      "cartman-centric",
+      "garrison-centric"
     ]
   },
   {
@@ -3161,7 +3178,9 @@
       "Kenny",
       "Butters"
     ],
-    "tags": []
+    "tags": [
+      "garrison-centric"
+    ]
   },
   {
     "id": "S11E07",
@@ -3411,7 +3430,8 @@
       "Butters"
     ],
     "tags": [
-      "cartman-centric"
+      "cartman-centric",
+      "garrison-centric"
     ]
   },
   {
@@ -4111,7 +4131,7 @@
     "id": "S14E14",
     "season": 14,
     "episode": 14,
-    "title": "Crème Fraîche",
+    "title": "Cr\u00e8me Fra\u00eeche",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-14-episode-14-crme-fraiche",
     "airDate": "2010-11-17",
     "description": "In the 14th-season finale, Randy's addiction to the Food Network has a detrimental effect on his family.",
@@ -4359,7 +4379,7 @@
     "title": "A History Channel Thanksgiving",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-15-episode-13-a-history-channel-thanksgiving",
     "airDate": "2011-11-09",
-    "description": "The boys learn what really happened at the first Thanksgiving—including an extraterrestrial presence—from a TV documentary.",
+    "description": "The boys learn what really happened at the first Thanksgiving\u2014including an extraterrestrial presence\u2014from a TV documentary.",
     "characters": [
       "Stan",
       "Kyle",
@@ -4420,7 +4440,7 @@
     "title": "Cash for Gold",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-16-episode-2-cash-for-gold-2",
     "airDate": "2012-03-21",
-    "description": "Cartman targets a specific—and vulnerable—clientele when he starts his own shopping channel for gems, while Stan researches the value of a piece of jewelry that was a gift from his grandfather.",
+    "description": "Cartman targets a specific\u2014and vulnerable\u2014clientele when he starts his own shopping channel for gems, while Stan researches the value of a piece of jewelry that was a gift from his grandfather.",
     "characters": [
       "Stan",
       "Kyle",
@@ -5084,7 +5104,8 @@
       "Randy"
     ],
     "tags": [
-      "butters-centric"
+      "butters-centric",
+      "garrison-centric"
     ]
   },
   {
@@ -5270,7 +5291,8 @@
     ],
     "tags": [
       "cartman-centric",
-      "randy-centric"
+      "randy-centric",
+      "garrison-centric"
     ]
   },
   {
@@ -5308,7 +5330,8 @@
       "Randy"
     ],
     "tags": [
-      "cartman-centric"
+      "cartman-centric",
+      "garrison-centric"
     ]
   },
   {
@@ -5350,7 +5373,9 @@
       "PC Principal",
       "Kyle"
     ],
-    "tags": []
+    "tags": [
+      "garrison-centric"
+    ]
   },
   {
     "id": "S20E06",
@@ -5366,7 +5391,8 @@
       "Randy"
     ],
     "tags": [
-      "cartman-centric"
+      "cartman-centric",
+      "garrison-centric"
     ]
   },
   {
@@ -5385,7 +5411,9 @@
       "PC Principal",
       "Randy"
     ],
-    "tags": []
+    "tags": [
+      "garrison-centric"
+    ]
   },
   {
     "id": "S20E08",
@@ -5402,7 +5430,8 @@
       "PC Principal"
     ],
     "tags": [
-      "celebrity-parody"
+      "celebrity-parody",
+      "garrison-centric"
     ]
   },
   {
@@ -5578,7 +5607,8 @@
       "Butters"
     ],
     "tags": [
-      "cartman-centric"
+      "cartman-centric",
+      "garrison-centric"
     ]
   },
   {
@@ -5636,7 +5666,8 @@
       "Randy"
     ],
     "tags": [
-      "season-finale"
+      "season-finale",
+      "garrison-centric"
     ]
   },
   {
@@ -6064,7 +6095,8 @@
       "Randy"
     ],
     "tags": [
-      "cartman-centric"
+      "cartman-centric",
+      "garrison-centric"
     ]
   },
   {
@@ -6208,7 +6240,8 @@
     "description": "Spring Break is an excuse for Garrison to jump back into his former depraved lifestyle.",
     "characters": [],
     "tags": [
-      "season-finale"
+      "season-finale",
+      "garrison-centric"
     ]
   },
   {

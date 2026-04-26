@@ -62,6 +62,7 @@ const CATEGORY_TAG: Record<string, EpisodeTag> = {
 	"Category:Episodes With Celebrity Appearances": "celebrity-parody",
 	"Category:Multi-Parter Episodes": "trilogy",
 	"Category:Banned Episodes": "controversial",
+	"Category:Episodes Focusing On Mr. Garrison": "garrison-centric",
 };
 
 // Fandom focus categories → character name
