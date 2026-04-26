@@ -11,7 +11,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
-    "scrape": "bun run scripts/scrape-episodes.ts"
+    "scrape": "bun run scripts/scrape-episodes.ts",
+    "enrich": "bun run scripts/enrich-episodes.ts"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^3",
