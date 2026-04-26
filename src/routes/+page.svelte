@@ -17,6 +17,15 @@
   const allEpisodes = episodesData as Episode[]
 
   let ready = $state(false)
+  let showBackToTop = $state(false)
+
+  function onScroll() {
+    showBackToTop = window.scrollY > 400
+  }
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 
   onMount(() => {
     const { episodeId, ...filters } = decodeFilters($page.url)
@@ -54,7 +63,7 @@
   }
 </script>
 
-<svelte:window onkeydown={handleKeydown} />
+<svelte:window onkeydown={handleKeydown} onscroll={onScroll} />
 
 <main class="min-h-screen px-4 pt-10 pb-48">
   <header class="text-center select-none mb-10">
@@ -91,3 +100,13 @@
     </div>
   </div>
 </main>
+
+{#if showBackToTop}
+  <button
+    onclick={scrollToTop}
+    class="fixed bottom-8 right-8 z-50 w-12 h-12 rounded-full bg-sp-yellow text-sp-dark font-bold text-xl shadow-lg hover:scale-110 transition-transform"
+    aria-label="Back to top"
+  >
+    ↑
+  </button>
+{/if}
