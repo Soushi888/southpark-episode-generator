@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { Episode } from '$lib/types'
+  import { toWcoUrl } from '$lib/types'
   import { seenStore } from '$lib/stores/seen.svelte'
   import EpisodeBadge from './EpisodeBadge.svelte'
   import StarRating from './StarRating.svelte'
@@ -52,12 +53,20 @@
 
   <div class="flex flex-col gap-3 mt-2">
     <a
-      href={episode.watchUrl}
+      href={toWcoUrl(episode.watchUrl)}
       target="_blank"
       rel="noopener noreferrer"
       class="flex items-center justify-center gap-2 w-full py-3 bg-sp-red hover:bg-sp-red/80 text-white rounded-xl transition-colors border-2 border-black/30 sp-heading text-xl tracking-wide"
     >
       ▶ WATCH NOW
+    </a>
+    <a
+      href={episode.watchUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex items-center justify-center gap-2 w-full py-2 bg-white/5 hover:bg-white/10 text-white/50 hover:text-white/80 rounded-xl transition-colors border border-white/10 text-sm font-semibold"
+    >
+      ▶ Watch on WCOFlix (fallback)
     </a>
     <button
       onclick={toggleSeen}

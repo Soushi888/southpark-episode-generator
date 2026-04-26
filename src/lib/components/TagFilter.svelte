@@ -1,24 +1,24 @@
 <script lang="ts">
-  import { filterStore } from '$lib/stores/filters.svelte'
-  import { ALL_TAGS, type EpisodeTag } from '$lib/types'
+    import { filterStore } from "$lib/stores/filters.svelte";
+    import { ALL_TAGS, type EpisodeTag } from "$lib/types";
 
-  function toggleTag(tag: EpisodeTag) {
-    filterStore.tags = filterStore.tags.includes(tag)
-      ? filterStore.tags.filter((t) => t !== tag)
-      : [...filterStore.tags, tag]
-  }
+    function toggleTag(tag: EpisodeTag) {
+        filterStore.tags = filterStore.tags.includes(tag)
+            ? filterStore.tags.filter((t) => t !== tag)
+            : [...filterStore.tags, tag];
+    }
 </script>
 
 <div class="flex flex-wrap gap-1.5">
-  {#each ALL_TAGS as tag}
-    {@const active = filterStore.tags.includes(tag)}
-    <button
-      onclick={() => toggleTag(tag)}
-      class="pill text-xs border cursor-pointer transition-all {active
-        ? 'bg-sp-yellow text-black border-yellow-400 font-black'
-        : 'bg-white/5 text-white/50 border-white/10 hover:border-white/30'}"
-    >
-      {tag}
-    </button>
-  {/each}
+    {#each ALL_TAGS as tag}
+        {@const active = filterStore.tags.includes(tag)}
+        <button
+            onclick={() => toggleTag(tag)}
+            class="pill text-xs border cursor-pointer transition-all {active
+                ? 'bg-sp-yellow text-black border-yellow-400 font-black'
+                : 'bg-white/5 text-white/50 border-white/10 hover:border-white/30'}"
+        >
+            {tag}
+        </button>
+    {/each}
 </div>
