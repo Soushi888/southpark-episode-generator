@@ -1,19 +1,12 @@
 export type EpisodeId = string // "S01E04"
 
-export type EpisodeTag =
-  | 'classic'
-  | 'controversial'
-  | 'cartman-centric'
-  | 'kenny-dies'
-  | 'randy-centric'
-  | 'butters-centric'
-  | 'movie-length'
-  | 'season-finale'
-  | 'holiday'
-  | 'celebrity-parody'
-  | 'meta'
-  | 'trilogy'
-  | 'garrison-centric'
+export const ALL_TAGS = [
+  'classic', 'controversial', 'cartman-centric', 'kenny-dies',
+  'randy-centric', 'butters-centric', 'garrison-centric', 'movie-length',
+  'season-finale', 'holiday', 'celebrity-parody', 'meta', 'trilogy',
+] as const
+
+export type EpisodeTag = typeof ALL_TAGS[number]
 
 export type Episode = {
   id: EpisodeId

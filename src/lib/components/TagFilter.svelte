@@ -1,12 +1,6 @@
 <script lang="ts">
   import { filterStore } from '$lib/stores/filters.svelte'
-  import type { EpisodeTag } from '$lib/types'
-
-  const ALL_TAGS: EpisodeTag[] = [
-    'classic', 'controversial', 'cartman-centric', 'kenny-dies',
-    'randy-centric', 'butters-centric', 'garrison-centric', 'movie-length',
-    'season-finale', 'holiday', 'celebrity-parody', 'meta', 'trilogy'
-  ]
+  import { ALL_TAGS, type EpisodeTag } from '$lib/types'
 
   function toggleTag(tag: EpisodeTag) {
     filterStore.tags = filterStore.tags.includes(tag)
