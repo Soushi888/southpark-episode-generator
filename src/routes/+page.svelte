@@ -4,7 +4,6 @@
   import { replaceState } from '$app/navigation'
   import { episodeStore } from '$lib/stores/episode.svelte'
   import { filterStore } from '$lib/stores/filters.svelte'
-  import { seenStore } from '$lib/stores/seen.svelte'
   import { pickEpisode } from '$lib/picker'
   import { encodeFilters, decodeFilters } from '$lib/url-state'
   import type { Episode } from '$lib/types'
@@ -41,7 +40,6 @@
     episodeStore.spinning = true
     const picked = pickEpisode(filterStore.filtered)
     episodeStore.current = picked
-    seenStore.markSeen(picked.id)
     episodeStore.spinning = false
   }
 
