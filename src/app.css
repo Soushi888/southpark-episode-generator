@@ -17,7 +17,7 @@ body::after {
   left: 0;
   right: 0;
   height: 38vh;
-  background: url('/southpark-episode-generator/mountains.svg') center bottom / cover no-repeat;
+  background: url('/southpark-episode-picker/mountains.svg') center bottom / cover no-repeat;
   pointer-events: none;
   z-index: 0;
   opacity: 0.2;

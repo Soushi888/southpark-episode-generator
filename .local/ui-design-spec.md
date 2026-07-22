@@ -1,6 +1,6 @@
-# UI Design Specification — South Park Episode Generator
+# UI Design Specification — South Park Episode Picker
 
-Generated from design audit of the live app at https://soushi888.github.io/southpark-episode-generator/
+Generated from design audit of the live app at https://soushi888.github.io/southpark-episode-picker/
 
 ## Implementation Priority
 

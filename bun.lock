@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "southpark-episode-generator",
+      "name": "southpark-episode-picker",
       "devDependencies": {
         "@biomejs/biome": "^1",
         "@playwright/test": "^1",

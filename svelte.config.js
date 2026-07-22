@@ -15,7 +15,7 @@ const config = {
       fallback: 'index.html'
     }),
     paths: {
-      base: process.env.NODE_ENV === 'production' ? '/southpark-episode-generator' : ''
+      base: process.env.NODE_ENV === 'production' ? '/southpark-episode-picker' : ''
     }
   }
 }

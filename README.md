@@ -1,8 +1,8 @@
-# South Park Random Episode Generator
+# South Park Random Episode Picker
 
 A static SPA that picks a random South Park episode from all 329 episodes across 28 seasons. Filter by season range, characters, and tags. Seen episodes are tracked in `localStorage`.
 
-**Live:** https://soushi888.github.io/southpark-episode-generator/
+**Live:** https://soushi888.github.io/southpark-episode-picker/
 
 ## Features
 
