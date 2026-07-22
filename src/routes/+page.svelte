@@ -68,7 +68,7 @@
 <main class="min-h-screen px-4 pt-10 pb-48">
   <header class="text-center select-none mb-10">
     <h1 class="sp-logo text-6xl text-sp-yellow mb-1">🏔 SOUTH PARK</h1>
-    <p class="sp-heading text-lg text-white/50 tracking-widest">RANDOM EPISODE GENERATOR</p>
+    <p class="sp-heading text-lg text-white/50 tracking-widest">RANDOM EPISODE PICKER</p>
   </header>
 
   <div class="max-w-6xl mx-auto lg:grid lg:grid-cols-2 lg:gap-10 lg:items-start flex flex-col items-center gap-8">
