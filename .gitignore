@@ -6,3 +6,7 @@ build
 !.env.example
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Seen-episode state is per-user and lives in localStorage; never commit an export of it
+seen-episodes.json
+*.seen.json
