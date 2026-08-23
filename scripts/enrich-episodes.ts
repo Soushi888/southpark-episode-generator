@@ -14,84 +14,120 @@ import { readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 
 type EpisodeTag =
-	| "classic"
-	| "controversial"
-	| "cartman-centric"
-	| "kenny-dies"
-	| "randy-centric"
-	| "butters-centric"
-	| "movie-length"
-	| "season-finale"
-	| "holiday"
-	| "celebrity-parody"
-	| "meta"
-	| "trilogy";
+  | "classic"
+  | "controversial"
+  | "cartman-centric"
+  | "kenny-dies"
+  | "randy-centric"
+  | "butters-centric"
+  | "movie-length"
+  | "season-finale"
+  | "holiday"
+  | "celebrity-parody"
+  | "meta"
+  | "trilogy";
 
 type Episode = {
-	id: string;
-	season: number;
-	episode: number;
-	title: string;
-	watchUrl: string;
-	airDate: string;
-	description: string;
-	characters: string[];
-	tags: EpisodeTag[];
+  id: string;
+  season: number;
+  episode: number;
+  title: string;
+  watchUrl: string;
+  airDate: string;
+  description: string;
+  characters: string[];
+  tags: EpisodeTag[];
 };
 
 // Hardcoded spapi.dev character IDs → TOP_CHARACTERS short names
 // (avoids fetching all 22 character pages; pages 21-22 return HTTP 500)
 const TOP_CHAR_IDS: Record<number, string> = {
-	3: "Kyle",
-	11: "Cartman",
-	32: "Stan",
-	42: "Kenny",
-	159: "Butters",
-	30: "Randy",
-	190: "Tweek",
-	180: "Craig",
-	88: "Mr. Garrison",
-	137: "PC Principal",
+  3: "Kyle",
+  11: "Cartman",
+  32: "Stan",
+  42: "Kenny",
+  159: "Butters",
+  30: "Randy",
+  190: "Tweek",
+  180: "Craig",
+  88: "Mr. Garrison",
+  137: "PC Principal",
 };
 
 // Fandom category → EpisodeTag (direct mapping)
 const CATEGORY_TAG: Record<string, EpisodeTag> = {
-	"Category:Episodes Where Kenny Dies": "kenny-dies",
-	"Category:Holiday Episodes": "holiday",
-	"Category:Christmas Specials": "holiday",
-	"Category:Episodes With Celebrity Appearances": "celebrity-parody",
-	"Category:Multi-Parter Episodes": "trilogy",
-	"Category:Banned Episodes": "controversial",
-	"Category:Episodes Focusing On Mr. Garrison": "garrison-centric",
+  "Category:Episodes Where Kenny Dies": "kenny-dies",
+  "Category:Holiday Episodes": "holiday",
+  "Category:Christmas Specials": "holiday",
+  "Category:Episodes With Celebrity Appearances": "celebrity-parody",
+  "Category:Multi-Parter Episodes": "trilogy",
+  "Category:Banned Episodes": "controversial",
+  "Category:Episodes Focusing On Mr. Garrison": "garrison-centric",
 };
 
 // Fandom focus categories → character name
 const FOCUS_CHAR: Record<string, string> = {
-	"Category:Episodes Focusing On Cartman": "Cartman",
-	"Category:Episodes Focusing On Randy": "Randy",
-	"Category:Episodes Focusing On Butters": "Butters",
+  "Category:Episodes Focusing On Cartman": "Cartman",
+  "Category:Episodes Focusing On Randy": "Randy",
+  "Category:Episodes Focusing On Butters": "Butters",
 };
 
 // Character → centric tag (only applied when focused chars ≤ 2)
 const CHAR_CENTRIC_TAG: Record<string, EpisodeTag> = {
-	Cartman: "cartman-centric",
-	Randy: "randy-centric",
-	Butters: "butters-centric",
+  Cartman: "cartman-centric",
+  Randy: "randy-centric",
+  Butters: "butters-centric",
 };
 
 function stripHtml(html: string): string {
-	return html
-		.replace(/<[^>]+>/g, "")
-		.replace(/&amp;/g, "&")
-		.replace(/&lt;/g, "<")
-		.replace(/&gt;/g, ">")
-		.replace(/&quot;/g, '"')
-		.replace(/&#39;/g, "'")
-		.trim();
+  return html
+    .replace(/<[^>]+>/g, "")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .trim();
 }
 
 function sleep(ms: number) {
-	return new Promise((r) => setTimeout(r, ms));
+  return new Promise((r) => setTimeout(r, ms));
+}
+
+// ── Title matching ───────────────────────────────────────────────────────────
+// Sources disagree on episode NUMBERING: episodes.json follows wco.tv's order
+// (production order for the early seasons), while TVmaze, spapi.dev and Fandom
+// each have their own. Keying enrichment on the S/E id therefore pairs a title
+// with another episode's air date, summary, characters and tags. Every lookup
+// below keys on the normalized TITLE instead — the one field all sources agree on.
+
+// Our title → the same episode's title on a source, where normalization alone
+// cannot bridge them.
+const TITLE_ALIASES: Record<string, string> = {
+  "Chef's Salty Chocolate Balls": "Chef's Chocolate Salty Balls",
+  "You Got F'd in the A": "You Got F**ked in the Ass",
+  "4th Grade": "Fourth Grade",
+  "Cartoon Wars Part I": "Cartoon Wars, Part 1",
+  "Cartoon Wars Part II": "Cartoon Wars, Part 2",
+  "Go God Go": "Go, God. Go! Part II",
+  Imaginationland: "Imaginationland: Episode I",
+  "Black Friday": "The Black Friday Trilogy",
+  "DikinBaus Hot Dogs": "DiKimble's Hot Dogs",
+};
+
+/** Normalize a title to a comparison key: accents folded, "(a.k.a. …)" and
+ *  "(1)"/"(2)" part markers dropped, leading "The" dropped, punctuation removed. */
+function titleKey(title: string): string {
+  return (TITLE_ALIASES[title] ?? title)
+    .normalize("NFKD")
+    .replace(/\p{M}/gu, "")
+    .toLowerCase()
+    .replace(/\(a\.?k\.?a\.?[^)]*\)/g, "")
+    .replace(/\(\d+\)\s*$/, "")
+    .replace(/&/g, "and")
+    .trim()
+    .replace(/^the\s+/, "")
+    .replace(/[^a-z0-9]+/g, "");
 }
 
 // ── Phase 1: TVmaze ──────────────────────────────────────────────────────────
@@ -99,27 +135,29 @@ function sleep(ms: number) {
 type TVData = { airDate: string; description: string; runtime: number };
 
 async function fetchTVmaze(): Promise<Map<string, TVData>> {
-	console.log("Phase 1: Fetching TVmaze episodes...");
-	const res = await fetch("https://api.tvmaze.com/shows/112/episodes");
-	const data = (await res.json()) as Array<{
-		season: number;
-		number: number;
-		airdate: string;
-		summary: string | null;
-		runtime: number | null;
-	}>;
+  console.log("Phase 1: Fetching TVmaze episodes...");
+  const res = await fetch("https://api.tvmaze.com/shows/112/episodes");
+  const data = (await res.json()) as Array<{
+    name: string;
+    season: number;
+    number: number;
+    airdate: string;
+    summary: string | null;
+    runtime: number | null;
+  }>;
 
-	const map = new Map<string, TVData>();
-	for (const ep of data) {
-		const id = `S${String(ep.season).padStart(2, "0")}E${String(ep.number).padStart(2, "0")}`;
-		map.set(id, {
-			airDate: ep.airdate ?? "",
-			description: ep.summary ? stripHtml(ep.summary) : "",
-			runtime: ep.runtime ?? 30,
-		});
-	}
-	console.log(`  → ${map.size} episodes`);
-	return map;
+  const map = new Map<string, TVData>();
+  for (const ep of data) {
+    const key = titleKey(ep.name);
+    if (map.has(key)) continue; // first occurrence wins
+    map.set(key, {
+      airDate: ep.airdate ?? "",
+      description: ep.summary ? stripHtml(ep.summary) : "",
+      runtime: ep.runtime ?? 30,
+    });
+  }
+  console.log(`  → ${map.size} episodes`);
+  return map;
 }
 
 // ── Phase 2: spapi.dev characters ────────────────────────────────────────────
@@ -127,208 +165,210 @@ async function fetchTVmaze(): Promise<Map<string, TVData>> {
 type SpapiEp = { wikiUrl: string; characters: string[] };
 
 async function fetchSpapi(): Promise<Map<string, SpapiEp>> {
-	console.log("Phase 2: Fetching spapi.dev data...");
+  console.log("Phase 2: Fetching spapi.dev data...");
 
-	const map = new Map<string, SpapiEp>();
-	let page = 1;
-	while (true) {
-		const res = await fetch(`https://spapi.dev/api/episodes?page=${page}`);
-		const text = await res.text();
-		let data: {
-			data: Array<{
-				season: number;
-				episode: number;
-				wiki_url: string;
-				characters: string[];
-			}>;
-			meta: { current_page: number; last_page: number };
-		};
-		try {
-			data = JSON.parse(text);
-		} catch {
-			console.warn(`  Page ${page} parse error, skipping`);
-			page++;
-			if (page > 40) break;
-			await sleep(300);
-			continue;
-		}
+  const map = new Map<string, SpapiEp>();
+  let page = 1;
+  while (true) {
+    const res = await fetch(`https://spapi.dev/api/episodes?page=${page}`);
+    const text = await res.text();
+    let data: {
+      data: Array<{
+        name: string;
+        season: number;
+        episode: number;
+        wiki_url: string;
+        characters: string[];
+      }>;
+      meta: { current_page: number; last_page: number };
+    };
+    try {
+      data = JSON.parse(text);
+    } catch {
+      console.warn(`  Page ${page} parse error, skipping`);
+      page++;
+      if (page > 40) break;
+      await sleep(300);
+      continue;
+    }
 
-		for (const ep of data.data) {
-			const id = `S${String(ep.season).padStart(2, "0")}E${String(ep.episode).padStart(2, "0")}`;
-			const chars = (ep.characters ?? [])
-				.map((url: string) => {
-					const m = url.match(/\/characters\/(\d+)/);
-					if (!m) return null;
-					return TOP_CHAR_IDS[Number(m[1])] ?? null;
-				})
-				.filter((n): n is string => n !== null)
-				.filter((n, i, a) => a.indexOf(n) === i);
+    for (const ep of data.data) {
+      const key = titleKey(ep.name);
+      const chars = (ep.characters ?? [])
+        .map((url: string) => {
+          const m = url.match(/\/characters\/(\d+)/);
+          if (!m) return null;
+          return TOP_CHAR_IDS[Number(m[1])] ?? null;
+        })
+        .filter((n): n is string => n !== null)
+        .filter((n, i, a) => a.indexOf(n) === i);
 
-			map.set(id, { wikiUrl: ep.wiki_url ?? "", characters: chars });
-		}
+      if (!map.has(key)) {
+        map.set(key, { wikiUrl: ep.wiki_url ?? "", characters: chars });
+      }
+    }
 
-		if (data.meta.current_page >= data.meta.last_page) break;
-		page++;
-		await sleep(150);
-	}
-	console.log(`  → ${map.size} episodes`);
-	return map;
+    if (data.meta.current_page >= data.meta.last_page) break;
+    page++;
+    await sleep(150);
+  }
+  console.log(`  → ${map.size} episodes`);
+  return map;
 }
 
 // ── Phase 3: Fandom categories → tags ────────────────────────────────────────
 
 function titleToWikiPage(title: string): string {
-	// Convert episode title to Fandom wiki page name format
-	return title.replace(/ /g, "_").replace(/'/g, "'");
+  // Convert episode title to Fandom wiki page name format
+  return title.replace(/ /g, "_").replace(/'/g, "'");
 }
 
 function wikiUrlToPage(url: string): string {
-	const m = url.match(/\/wiki\/(.+)$/);
-	return m ? decodeURIComponent(m[1]) : "";
+  const m = url.match(/\/wiki\/(.+)$/);
+  return m ? decodeURIComponent(m[1]) : "";
 }
 
 function catsToTags(cats: string[]): EpisodeTag[] {
-	const tags = new Set<EpisodeTag>();
+  const tags = new Set<EpisodeTag>();
 
-	for (const cat of cats) {
-		const direct = CATEGORY_TAG[cat];
-		if (direct) tags.add(direct);
-	}
+  for (const cat of cats) {
+    const direct = CATEGORY_TAG[cat];
+    if (direct) tags.add(direct);
+  }
 
-	// Character-centric: only apply when ≤ 2 characters are "focused on"
-	// Count ALL "Focusing On" categories to determine if episode is truly centric
-	const totalFocusCount = cats.filter((c) =>
-		c.startsWith("Category:Episodes Focusing On"),
-	).length;
-	if (totalFocusCount <= 2) {
-		const focused = cats
-			.map((c) => FOCUS_CHAR[c])
-			.filter((n): n is string => n !== undefined);
-		for (const char of focused) {
-			const tag = CHAR_CENTRIC_TAG[char];
-			if (tag) tags.add(tag);
-		}
-	}
+  // Character-centric: only apply when ≤ 2 characters are "focused on"
+  // Count ALL "Focusing On" categories to determine if episode is truly centric
+  const totalFocusCount = cats.filter((c) => c.startsWith("Category:Episodes Focusing On")).length;
+  if (totalFocusCount <= 2) {
+    const focused = cats.map((c) => FOCUS_CHAR[c]).filter((n): n is string => n !== undefined);
+    for (const char of focused) {
+      const tag = CHAR_CENTRIC_TAG[char];
+      if (tag) tags.add(tag);
+    }
+  }
 
-	return [...tags];
+  return [...tags];
 }
 
 async function fetchFandomTags(
-	episodes: Episode[],
-	spapiMap: Map<string, SpapiEp>,
+  episodes: Episode[],
+  spapiMap: Map<string, SpapiEp>,
 ): Promise<Map<string, EpisodeTag[]>> {
-	console.log("Phase 3: Fetching Fandom categories...");
-	const result = new Map<string, EpisodeTag[]>();
+  console.log("Phase 3: Fetching Fandom categories...");
+  const result = new Map<string, EpisodeTag[]>();
 
-	// Build page → episode ID map
-	const pageToId = new Map<string, string>();
-	for (const ep of episodes) {
-		const spapi = spapiMap.get(ep.id);
-		const page = spapi?.wikiUrl
-			? wikiUrlToPage(spapi.wikiUrl)
-			: titleToWikiPage(ep.title);
-		if (page) pageToId.set(page, ep.id);
-	}
+  // Build page → title key map
+  const pageToKey = new Map<string, string>();
+  for (const ep of episodes) {
+    const spapi = spapiMap.get(titleKey(ep.title));
+    const page = spapi?.wikiUrl ? wikiUrlToPage(spapi.wikiUrl) : titleToWikiPage(ep.title);
+    if (page) pageToKey.set(page, titleKey(ep.title));
+  }
 
-	const pages = [...pageToId.keys()];
-	const BATCH = 50;
+  const pages = [...pageToKey.keys()];
+  const BATCH = 50;
 
-	for (let i = 0; i < pages.length; i += BATCH) {
-		const batch = pages.slice(i, i + BATCH);
-		const titlesParam = batch.map(encodeURIComponent).join("|");
-		const url = `https://southpark.fandom.com/api.php?action=query&titles=${titlesParam}&prop=categories&cllimit=500&format=json`;
+  for (let i = 0; i < pages.length; i += BATCH) {
+    const batch = pages.slice(i, i + BATCH);
+    const titlesParam = batch.map(encodeURIComponent).join("|");
+    const url = `https://southpark.fandom.com/api.php?action=query&titles=${titlesParam}&prop=categories&cllimit=500&format=json`;
 
-		try {
-			const res = await fetch(url);
-			const data = (await res.json()) as {
-				query: {
-					pages: Record<
-						string,
-						{ title: string; categories?: Array<{ title: string }> }
-					>;
-				};
-			};
+    try {
+      const res = await fetch(url);
+      const data = (await res.json()) as {
+        query: {
+          pages: Record<string, { title: string; categories?: Array<{ title: string }> }>;
+        };
+      };
 
-			for (const page of Object.values(data.query.pages)) {
-				const normalized = page.title?.replace(/ /g, "_") ?? "";
-				const epId = pageToId.get(normalized);
-				if (!epId) continue;
-				const cats = (page.categories ?? []).map((c) => c.title);
-				result.set(epId, catsToTags(cats));
-			}
-		} catch (e) {
-			console.error(`  Batch ${i / BATCH + 1} error:`, e);
-		}
+      for (const page of Object.values(data.query.pages)) {
+        const normalized = page.title?.replace(/ /g, "_") ?? "";
+        const epKey = pageToKey.get(normalized);
+        if (!epKey) continue;
+        const cats = (page.categories ?? []).map((c) => c.title);
+        result.set(epKey, catsToTags(cats));
+      }
+    } catch (e) {
+      console.error(`  Batch ${i / BATCH + 1} error:`, e);
+    }
 
-		process.stdout.write(
-			`\r  → ${Math.min(i + BATCH, pages.length)}/${pages.length} processed`,
-		);
-		await sleep(400);
-	}
-	console.log();
-	return result;
+    process.stdout.write(`\r  → ${Math.min(i + BATCH, pages.length)}/${pages.length} processed`);
+    await sleep(400);
+  }
+  console.log();
+  return result;
 }
 
 // ── Phase 4: Derived tags ─────────────────────────────────────────────────────
 
 function derivedTags(
-	ep: Episode,
-	lastEpPerSeason: Map<number, number>,
-	runtime: number,
+  ep: Episode,
+  lastEpPerSeason: Map<number, number>,
+  runtime: number,
 ): EpisodeTag[] {
-	const tags: EpisodeTag[] = [];
-	if (ep.episode === lastEpPerSeason.get(ep.season)) tags.push("season-finale");
-	if (ep.season <= 7) tags.push("classic");
-	if (runtime > 45) tags.push("movie-length");
-	return tags;
+  const tags: EpisodeTag[] = [];
+  if (ep.episode === lastEpPerSeason.get(ep.season)) tags.push("season-finale");
+  if (ep.season <= 7) tags.push("classic");
+  if (runtime > 45) tags.push("movie-length");
+  return tags;
 }
 
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 async function main() {
-	const epPath = join(import.meta.dir, "../src/lib/data/episodes.json");
-	const episodes: Episode[] = JSON.parse(readFileSync(epPath, "utf-8"));
+  const epPath = join(import.meta.dir, "../src/lib/data/episodes.json");
+  const episodes: Episode[] = JSON.parse(readFileSync(epPath, "utf-8"));
 
-	const lastEpPerSeason = new Map<number, number>();
-	for (const ep of episodes) {
-		const cur = lastEpPerSeason.get(ep.season) ?? 0;
-		if (ep.episode > cur) lastEpPerSeason.set(ep.season, ep.episode);
-	}
+  const lastEpPerSeason = new Map<number, number>();
+  for (const ep of episodes) {
+    const cur = lastEpPerSeason.get(ep.season) ?? 0;
+    if (ep.episode > cur) lastEpPerSeason.set(ep.season, ep.episode);
+  }
 
-	const tvmaze = await fetchTVmaze();
-	const spapi = await fetchSpapi();
-	const fandom = await fetchFandomTags(episodes, spapi);
+  const tvmaze = await fetchTVmaze();
+  const spapi = await fetchSpapi();
+  const fandom = await fetchFandomTags(episodes, spapi);
 
-	console.log("Merging...");
+  console.log("Merging...");
 
-	for (const ep of episodes) {
-		const tv = tvmaze.get(ep.id);
-		if (tv) {
-			ep.airDate = tv.airDate;
-			ep.description = tv.description;
-		}
+  const unmatched: string[] = [];
 
-		const sp = spapi.get(ep.id);
-		if (sp?.characters.length) {
-			ep.characters = sp.characters;
-		}
+  for (const ep of episodes) {
+    const key = titleKey(ep.title);
 
-		const fTags = fandom.get(ep.id) ?? [];
-		const dTags = derivedTags(ep, lastEpPerSeason, tv?.runtime ?? 30);
-		const merged = [...new Set([...fTags, ...dTags])] as EpisodeTag[];
-		if (merged.length) ep.tags = merged;
-	}
+    const tv = tvmaze.get(key);
+    if (tv) {
+      ep.airDate = tv.airDate;
+      ep.description = tv.description;
+    } else {
+      unmatched.push(`${ep.id} ${ep.title}`);
+    }
 
-	writeFileSync(epPath, JSON.stringify(episodes, null, 2));
+    const sp = spapi.get(key);
+    if (sp?.characters.length) {
+      ep.characters = sp.characters;
+    }
 
-	const w = (fn: (ep: Episode) => boolean) =>
-		episodes.filter(fn).length;
-	console.log(`\nWrote ${episodes.length} episodes → ${epPath}`);
-	console.log("Coverage:");
-	console.log(`  airDate:     ${w((e) => !!e.airDate)}/${episodes.length}`);
-	console.log(`  description: ${w((e) => !!e.description)}/${episodes.length}`);
-	console.log(`  characters:  ${w((e) => e.characters.length > 0)}/${episodes.length}`);
-	console.log(`  tags:        ${w((e) => e.tags.length > 0)}/${episodes.length}`);
+    const fTags = fandom.get(key) ?? [];
+    const dTags = derivedTags(ep, lastEpPerSeason, tv?.runtime ?? 30);
+    const merged = [...new Set([...fTags, ...dTags])] as EpisodeTag[];
+    if (merged.length) ep.tags = merged;
+  }
+
+  if (unmatched.length) {
+    console.warn(`\n⚠ ${unmatched.length} episode(s) with no TVmaze title match:`);
+    for (const u of unmatched) console.warn(`   ${u}`);
+  }
+
+  writeFileSync(epPath, JSON.stringify(episodes, null, 2));
+
+  const w = (fn: (ep: Episode) => boolean) => episodes.filter(fn).length;
+  console.log(`\nWrote ${episodes.length} episodes → ${epPath}`);
+  console.log("Coverage:");
+  console.log(`  airDate:     ${w((e) => !!e.airDate)}/${episodes.length}`);
+  console.log(`  description: ${w((e) => !!e.description)}/${episodes.length}`);
+  console.log(`  characters:  ${w((e) => e.characters.length > 0)}/${episodes.length}`);
+  console.log(`  tags:        ${w((e) => e.tags.length > 0)}/${episodes.length}`);
 }
 
 main().catch(console.error);

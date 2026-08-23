@@ -33,10 +33,10 @@
       "Kenny"
     ],
     "tags": [
+      "garrison-centric",
       "kenny-dies",
       "celebrity-parody",
-      "classic",
-      "garrison-centric"
+      "classic"
     ]
   },
   {
@@ -146,6 +146,25 @@
     "episode": 8,
     "title": "Damien",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-1-episode-8-damien",
+    "airDate": "1998-02-04",
+    "description": "As Cartman celebrates his birthday, Jesus Christ and Satan duke it out on a pay-per-view TV special. Meanwhile, Satan's son Damien tries to fit in with the crowd after making a violent first impression.",
+    "characters": [
+      "Stan",
+      "Kyle",
+      "Cartman",
+      "Kenny"
+    ],
+    "tags": [
+      "kenny-dies",
+      "classic"
+    ]
+  },
+  {
+    "id": "S01E09",
+    "season": 1,
+    "episode": 9,
+    "title": "Starvin Marvin",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-1-episode-9-starvin-marvin",
     "airDate": "1997-11-19",
     "description": "After the boys contact an agency that helps starving children, Government authorities send Cartman to Ethiopia. Meanwhile, the town holds a drive for canned goods; and turkeys revolt against a genetic engineer.",
     "characters": [
@@ -161,11 +180,11 @@
     ]
   },
   {
-    "id": "S01E09",
+    "id": "S01E10",
     "season": 1,
-    "episode": 9,
-    "title": "Starvin Marvin",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-1-episode-9-starvin-marvin",
+    "episode": 10,
+    "title": "Mr Hankey the Christmas Poo",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-1-episode-10-mr-hankey-the-christmas-poo",
     "airDate": "1997-12-17",
     "description": "Because he's Jewish, Kyle is denied involvement in the Nativity play and excluded from trips to see Santa. Meanwhile, South Park residents try to plan a politically correct celebration; and Mr. Hankey visits Kyle.",
     "characters": [
@@ -178,25 +197,6 @@
     "tags": [
       "holiday",
       "celebrity-parody",
-      "classic"
-    ]
-  },
-  {
-    "id": "S01E10",
-    "season": 1,
-    "episode": 10,
-    "title": "Mr Hankey the Christmas Poo",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-1-episode-10-mr-hankey-the-christmas-poo",
-    "airDate": "1998-02-04",
-    "description": "As Cartman celebrates his birthday, Jesus Christ and Satan duke it out on a pay-per-view TV special. Meanwhile, Satan's son Damien tries to fit in with the crowd after making a violent first impression.",
-    "characters": [
-      "Stan",
-      "Kyle",
-      "Cartman",
-      "Kenny"
-    ],
-    "tags": [
-      "kenny-dies",
       "classic"
     ]
   },
@@ -215,10 +215,10 @@
       "Kenny"
     ],
     "tags": [
+      "garrison-centric",
       "kenny-dies",
       "holiday",
-      "classic",
-      "garrison-centric"
+      "classic"
     ]
   },
   {
@@ -309,7 +309,6 @@
     ],
     "tags": [
       "kenny-dies",
-      "celebrity-parody",
       "classic"
     ]
   },
@@ -330,6 +329,7 @@
     ],
     "tags": [
       "kenny-dies",
+      "celebrity-parody",
       "classic"
     ]
   },
@@ -380,15 +380,8 @@
     "watchUrl": "https://www.wcoflix.tv/south-park-season-2-episode-7-city-on-the-edge-of-forever-a-k-a-flashbacks",
     "airDate": "1998-06-17",
     "description": "The boys put twists on events such as the attempted assassination of a talk-show host and a fight with Death as their bus hangs off a cliff. Meanwhile, Ms. Crabtree finds fame when she goes to look for help.",
-    "characters": [
-      "Stan",
-      "Kyle",
-      "Cartman",
-      "Kenny",
-      "Randy"
-    ],
+    "characters": [],
     "tags": [
-      "kenny-dies",
       "classic"
     ]
   },
@@ -407,10 +400,10 @@
       "Kenny"
     ],
     "tags": [
+      "garrison-centric",
       "kenny-dies",
       "holiday",
-      "classic",
-      "garrison-centric"
+      "classic"
     ]
   },
   {
@@ -529,10 +522,10 @@
       "Kenny"
     ],
     "tags": [
+      "garrison-centric",
       "kenny-dies",
       "celebrity-parody",
-      "classic",
-      "garrison-centric"
+      "classic"
     ]
   },
   {
@@ -625,15 +618,8 @@
     "watchUrl": "https://www.wcoflix.tv/south-park-season-3-episode-1-rainforest-schmainforest",
     "airDate": "1999-04-07",
     "description": "The boys accompany a teacher and her singing-and-dancing group to Central America to raise awareness of the rain forest. Also: Kenny falls for a choir member; and Kyle has trouble mastering the choreography.",
-    "characters": [
-      "Stan",
-      "Kyle",
-      "Kenny",
-      "Cartman",
-      "Craig"
-    ],
+    "characters": [],
     "tags": [
-      "kenny-dies",
       "classic"
     ]
   },
@@ -683,27 +669,6 @@
     "episode": 4,
     "title": "Tweek vs Craig",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-3-episode-4-tweek-vs-craig",
-    "airDate": "1999-06-16",
-    "description": "The boys discover two nearly extinct animals while camping on the banks of Stark's Pond.",
-    "characters": [
-      "Stan",
-      "Kyle",
-      "Kenny",
-      "Cartman",
-      "Randy"
-    ],
-    "tags": [
-      "kenny-dies",
-      "cartman-centric",
-      "classic"
-    ]
-  },
-  {
-    "id": "S03E05",
-    "season": 3,
-    "episode": 5,
-    "title": "Jakovasaurs",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-3-episode-5-jakovasaurs",
     "airDate": "1999-06-23",
     "description": "The boys take a shop class taught by an eccentric, and urge a schoolyard fight between classmates Tweek and Craig.",
     "characters": [
@@ -716,6 +681,27 @@
     ],
     "tags": [
       "kenny-dies",
+      "classic"
+    ]
+  },
+  {
+    "id": "S03E05",
+    "season": 3,
+    "episode": 5,
+    "title": "Jakovasaurs",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-3-episode-5-jakovasaurs",
+    "airDate": "1999-06-16",
+    "description": "The boys discover two nearly extinct animals while camping on the banks of Stark's Pond.",
+    "characters": [
+      "Stan",
+      "Kyle",
+      "Kenny",
+      "Cartman",
+      "Randy"
+    ],
+    "tags": [
+      "kenny-dies",
+      "cartman-centric",
       "classic"
     ]
   },
@@ -799,6 +785,45 @@
     "episode": 10,
     "title": "Chinpokomon",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-3-episode-10-chinpokomon",
+    "airDate": "1999-11-03",
+    "description": "Adults try to counter when the town's children become obsessed with a fad from Japan, whose government reveals their master plan behind the craze.",
+    "characters": [
+      "Stan",
+      "Kyle",
+      "Kenny",
+      "Cartman",
+      "Randy",
+      "Butters"
+    ],
+    "tags": [
+      "kenny-dies",
+      "classic"
+    ]
+  },
+  {
+    "id": "S03E11",
+    "season": 3,
+    "episode": 11,
+    "title": "Starvin' Marvin in Space",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-3-episode-11-starvin-marvin-in-space",
+    "airDate": "1999-11-17",
+    "description": "Starvin Marvin returns in a stolen U.S. spaceship, and enlists the boys to help feed his Ethiopian village. The CIA is among their pursuers.",
+    "characters": [
+      "Stan",
+      "Kyle",
+      "Kenny",
+      "Cartman"
+    ],
+    "tags": [
+      "classic"
+    ]
+  },
+  {
+    "id": "S03E12",
+    "season": 3,
+    "episode": 12,
+    "title": "Korn's Groovy Pirate Ghost Mystery",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-3-episode-12-korn-s-groovy-pirate-ghost-mystery",
     "airDate": "1999-10-27",
     "description": "On Halloween, the boys are plagued by fifth graders and the town is overrun by pirate ghosts. Music group Korn assists, and sings \"Falling Away from Me.\"",
     "characters": [
@@ -817,31 +842,11 @@
     ]
   },
   {
-    "id": "S03E11",
+    "id": "S03E13",
     "season": 3,
-    "episode": 11,
-    "title": "Starvin' Marvin in Space",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-3-episode-11-starvin-marvin-in-space",
-    "airDate": "1999-11-03",
-    "description": "Adults try to counter when the town's children become obsessed with a fad from Japan, whose government reveals their master plan behind the craze.",
-    "characters": [
-      "Stan",
-      "Kyle",
-      "Kenny",
-      "Cartman",
-      "Randy",
-      "Butters"
-    ],
-    "tags": [
-      "classic"
-    ]
-  },
-  {
-    "id": "S03E12",
-    "season": 3,
-    "episode": 12,
-    "title": "Korn's Groovy Pirate Ghost Mystery",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-3-episode-12-korn-s-groovy-pirate-ghost-mystery",
+    "episode": 13,
+    "title": "Hooked on Monkey Fonics",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-3-episode-13-hooked-on-monkey-fonics",
     "airDate": "1999-11-10",
     "description": "Kyle tries to teach his new rival about love; the boys compete against home-schooled kids in the annual spelling bee; and Cartman's mom agrees to teach him at home.",
     "characters": [
@@ -854,24 +859,8 @@
       "Butters"
     ],
     "tags": [
-      "classic"
-    ]
-  },
-  {
-    "id": "S03E13",
-    "season": 3,
-    "episode": 13,
-    "title": "Hooked on Monkey Fonics",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-3-episode-13-hooked-on-monkey-fonics",
-    "airDate": "1999-11-17",
-    "description": "Starvin Marvin returns in a stolen U.S. spaceship, and enlists the boys to help feed his Ethiopian village. The CIA is among their pursuers.",
-    "characters": [
-      "Stan",
-      "Kyle",
-      "Kenny",
-      "Cartman"
-    ],
-    "tags": [
+      "kenny-dies",
+      "cartman-centric",
       "classic"
     ]
   },
@@ -948,8 +937,7 @@
     ],
     "tags": [
       "season-finale",
-      "classic",
-      "garrison-centric"
+      "classic"
     ]
   },
   {
@@ -958,27 +946,6 @@
     "episode": 1,
     "title": "Cartman's Silly Hate Crime 2000",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-1-cartman-s-silly-hate-crime-2000",
-    "airDate": "2000-04-05",
-    "description": "Cartman impersonates the Tooth Fairy when he learns there's money to be made from harvesting the teeth of underprivileged kids. However, the leader of a dentists' organization sets out to stop him.",
-    "characters": [
-      "Stan",
-      "Kyle",
-      "Cartman",
-      "Kenny",
-      "Butters"
-    ],
-    "tags": [
-      "kenny-dies",
-      "celebrity-parody",
-      "classic"
-    ]
-  },
-  {
-    "id": "S04E02",
-    "season": 4,
-    "episode": 2,
-    "title": "The Tooth Fairy's Tats 2000",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-2-the-tooth-fairy-s-tats-2000",
     "airDate": "2000-04-12",
     "description": "Cartman is sentenced to juvenile hall and his friends plan to get him out. Meanwhile, he begins to adjust to life on the inside.",
     "characters": [
@@ -989,6 +956,21 @@
       "Butters"
     ],
     "tags": [
+      "kenny-dies",
+      "cartman-centric",
+      "classic"
+    ]
+  },
+  {
+    "id": "S04E02",
+    "season": 4,
+    "episode": 2,
+    "title": "The Tooth Fairy's Tats 2000",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-2-the-tooth-fairy-s-tats-2000",
+    "airDate": "2000-04-05",
+    "description": "Cartman impersonates the Tooth Fairy when he learns there's money to be made from harvesting the teeth of underprivileged kids. However, the leader of a dentists' organization sets out to stop him.",
+    "characters": [],
+    "tags": [
       "classic"
     ]
   },
@@ -998,27 +980,6 @@
     "episode": 3,
     "title": "Quintuplets 2000",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-3-quintuplets-2000",
-    "airDate": "2000-04-19",
-    "description": "Mr. Mackey excuses Timmy from homework when he mistakenly thinks the boy is suffering from Attention Deficit Disorder; then Cartman and his friends try to develop the same affliction.",
-    "characters": [
-      "Stan",
-      "Kyle",
-      "Cartman",
-      "Kenny",
-      "Randy"
-    ],
-    "tags": [
-      "kenny-dies",
-      "celebrity-parody",
-      "classic"
-    ]
-  },
-  {
-    "id": "S04E04",
-    "season": 4,
-    "episode": 4,
-    "title": "Timmy 2000",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-4-timmy-2000",
     "airDate": "2000-04-26",
     "description": "The South Park media showers attention on a family with quintuplets that moves into the area, and Cartman befriends one of the new residents. Meanwhile, Kenny's mom tries to cash in on the excitement by planning a multiple birth of her own.",
     "characters": [
@@ -1035,11 +996,46 @@
     ]
   },
   {
+    "id": "S04E04",
+    "season": 4,
+    "episode": 4,
+    "title": "Timmy 2000",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-4-timmy-2000",
+    "airDate": "2000-04-19",
+    "description": "Mr. Mackey excuses Timmy from homework when he mistakenly thinks the boy is suffering from Attention Deficit Disorder; then Cartman and his friends try to develop the same affliction.",
+    "characters": [
+      "Stan",
+      "Kyle",
+      "Cartman",
+      "Kenny",
+      "Randy"
+    ],
+    "tags": [
+      "kenny-dies",
+      "celebrity-parody",
+      "classic"
+    ]
+  },
+  {
     "id": "S04E05",
     "season": 4,
     "episode": 5,
     "title": "Pip (A.K.A. Great Expectations)",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-5-pip-a-k-a-great-expectations",
+    "airDate": "2000-11-29",
+    "description": "The boys' British classmate, Pip, stars in this spoof of Dickens' classic \"Great Expectations,\" set in London.",
+    "characters": [],
+    "tags": [
+      "celebrity-parody",
+      "classic"
+    ]
+  },
+  {
+    "id": "S04E06",
+    "season": 4,
+    "episode": 6,
+    "title": "Cartman Joins NAMBLA",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-6-cartman-joins-nambla",
     "airDate": "2000-06-21",
     "description": "Cartman seeks online companionship from older users after deciding that Stan, Kenny and Kyle aren't mature enough.",
     "characters": [
@@ -1055,11 +1051,11 @@
     ]
   },
   {
-    "id": "S04E06",
+    "id": "S04E07",
     "season": 4,
-    "episode": 6,
-    "title": "Cartman Joins NAMBLA",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-6-cartman-joins-nambla",
+    "episode": 7,
+    "title": "Cherokee Hair Tampons",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-7-cherokee-hair-tampons",
     "airDate": "2000-06-28",
     "description": "Kyle suffers from a rare kidney disease and Cartman may be the only one who can save him, but at a high price.",
     "characters": [
@@ -1070,17 +1066,18 @@
       "Butters"
     ],
     "tags": [
+      "garrison-centric",
       "kenny-dies",
       "celebrity-parody",
       "classic"
     ]
   },
   {
-    "id": "S04E07",
+    "id": "S04E08",
     "season": 4,
-    "episode": 7,
-    "title": "Cherokee Hair Tampons",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-7-cherokee-hair-tampons",
+    "episode": 8,
+    "title": "Chef Goes Nanners",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-8-chef-goes-nanners",
     "airDate": "2000-07-05",
     "description": "Chef protests against the South Park flag and ignites a town debate that even divides the kids. Meanwhile, Wendy becomes attracted to Cartman.",
     "characters": [
@@ -1094,16 +1091,15 @@
     ],
     "tags": [
       "kenny-dies",
-      "classic",
-      "garrison-centric"
+      "classic"
     ]
   },
   {
-    "id": "S04E08",
+    "id": "S04E09",
     "season": 4,
-    "episode": 8,
-    "title": "Chef Goes Nanners",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-8-chef-goes-nanners",
+    "episode": 9,
+    "title": "Something You Can Do With Your Finger",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-9-something-you-can-do-with-your-finger",
     "airDate": "2000-07-12",
     "description": "Stan, Kyle, Kenny and Cartman form their own band and hold tryouts for a fifth member.",
     "characters": [
@@ -1120,11 +1116,11 @@
     ]
   },
   {
-    "id": "S04E09",
+    "id": "S04E10",
     "season": 4,
-    "episode": 9,
-    "title": "Something You Can Do With Your Finger",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-9-something-you-can-do-with-your-finger",
+    "episode": 10,
+    "title": "Do the Handicapped Go to Hell?",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-10-do-the-handicapped-go-to-hell",
     "airDate": "2000-07-19",
     "description": "The boys, scared by Priest Maxi's threats of eternal damnation, scramble to take part in Holy Communion and their first Confession in order to \"save\" themselves.",
     "characters": [
@@ -1143,11 +1139,11 @@
     ]
   },
   {
-    "id": "S04E10",
+    "id": "S04E11",
     "season": 4,
-    "episode": 10,
-    "title": "Do the Handicapped Go to Hell?",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-10-do-the-handicapped-go-to-hell",
+    "episode": 11,
+    "title": "Probably",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-11-probably",
     "airDate": "2000-07-26",
     "description": "Satan can't decide between his new boyfriend and his former beau, Saddam Hussein. Meanwhile, Cartman has discovered his evangelical side and tries to ensure the gang a passage to heaven.",
     "characters": [
@@ -1165,11 +1161,11 @@
     ]
   },
   {
-    "id": "S04E11",
+    "id": "S04E12",
     "season": 4,
-    "episode": 11,
-    "title": "Probably",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-11-probably",
+    "episode": 12,
+    "title": "4th Grade",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-12-4th-grade",
     "airDate": "2000-11-08",
     "description": "The fearful boys speculate on the identity of their teacher as they begin the fourth grade, leading them to build a time machine to take them back to the safety of third grade.",
     "characters": [
@@ -1181,16 +1177,17 @@
       "Tweek"
     ],
     "tags": [
+      "garrison-centric",
       "kenny-dies",
       "classic"
     ]
   },
   {
-    "id": "S04E12",
+    "id": "S04E13",
     "season": 4,
-    "episode": 12,
-    "title": "4th Grade",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-12-4th-grade",
+    "episode": 13,
+    "title": "Trapper Keeper",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-13-trapper-keeper",
     "airDate": "2000-11-15",
     "description": "Mr. Garrison orders a recount when the race for kindergarten president is too close to call. Meanwhile, a life form from the future appears in the school yard at South Park Elementary.",
     "characters": [
@@ -1200,17 +1197,17 @@
       "Kenny"
     ],
     "tags": [
+      "garrison-centric",
       "kenny-dies",
-      "classic",
-      "garrison-centric"
+      "classic"
     ]
   },
   {
-    "id": "S04E13",
+    "id": "S04E14",
     "season": 4,
-    "episode": 13,
-    "title": "Trapper Keeper",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-13-trapper-keeper",
+    "episode": 14,
+    "title": "Helen Keller! The Musical",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-14-helen-keller-the-musical",
     "airDate": "2000-11-22",
     "description": "The boys work on a Thanksgiving pageant about Helen Keller and decide to use a turkey instead of a dog.",
     "characters": [
@@ -1224,21 +1221,6 @@
     "tags": [
       "kenny-dies",
       "holiday",
-      "classic",
-      "garrison-centric"
-    ]
-  },
-  {
-    "id": "S04E14",
-    "season": 4,
-    "episode": 14,
-    "title": "Helen Keller! The Musical",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-4-episode-14-helen-keller-the-musical",
-    "airDate": "2000-11-29",
-    "description": "The boys' British classmate, Pip, stars in this spoof of Dickens' classic \"Great Expectations,\" set in London.",
-    "characters": [],
-    "tags": [
-      "celebrity-parody",
       "classic"
     ]
   },
@@ -1315,6 +1297,28 @@
     "episode": 1,
     "title": "Scott Tenorman Must Die",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-5-episode-1-scott-tenorman-must-die",
+    "airDate": "2001-07-11",
+    "description": "Radiohead plays a role in Cartman's plan for revenge against an eighth-grader who wronged him.",
+    "characters": [
+      "Stan",
+      "Kyle",
+      "Kenny",
+      "Cartman",
+      "Butters"
+    ],
+    "tags": [
+      "kenny-dies",
+      "celebrity-parody",
+      "cartman-centric",
+      "classic"
+    ]
+  },
+  {
+    "id": "S05E02",
+    "season": 5,
+    "episode": 2,
+    "title": "It Hits the Fan",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-5-episode-2-it-hits-the-fan",
     "airDate": "2001-06-20",
     "description": "The boys realize they may have made history of some sort when Cartman utters an expletive.",
     "characters": [
@@ -1331,11 +1335,11 @@
     ]
   },
   {
-    "id": "S05E02",
+    "id": "S05E03",
     "season": 5,
-    "episode": 2,
-    "title": "It Hits the Fan",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-5-episode-2-it-hits-the-fan",
+    "episode": 3,
+    "title": "Cripple Fight",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-5-episode-3-cripple-fight",
     "airDate": "2001-06-27",
     "description": "The boys join the Mountain Scouts with Timmy, who winds up in a fight with Jimmy in a supermarket parking lot.",
     "characters": [
@@ -1350,11 +1354,11 @@
     ]
   },
   {
-    "id": "S05E03",
+    "id": "S05E04",
     "season": 5,
-    "episode": 3,
-    "title": "Cripple Fight",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-5-episode-3-cripple-fight",
+    "episode": 4,
+    "title": "The Super Best Friends",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-5-episode-4-the-super-best-friends",
     "airDate": "2001-07-04",
     "description": "A magician persuades Kenny, Cartman and Kyle to join his cult, and their journey lands them in Washington, D.C.",
     "characters": [
@@ -1367,28 +1371,6 @@
     "tags": [
       "kenny-dies",
       "celebrity-parody",
-      "classic"
-    ]
-  },
-  {
-    "id": "S05E04",
-    "season": 5,
-    "episode": 4,
-    "title": "The Super Best Friends",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-5-episode-4-the-super-best-friends",
-    "airDate": "2001-07-11",
-    "description": "Radiohead plays a role in Cartman's plan for revenge against an eighth-grader who wronged him.",
-    "characters": [
-      "Stan",
-      "Kyle",
-      "Kenny",
-      "Cartman",
-      "Butters"
-    ],
-    "tags": [
-      "kenny-dies",
-      "celebrity-parody",
-      "cartman-centric",
       "classic"
     ]
   },
@@ -1537,10 +1519,10 @@
       "Randy"
     ],
     "tags": [
+      "garrison-centric",
       "kenny-dies",
       "celebrity-parody",
-      "classic",
-      "garrison-centric"
+      "classic"
     ]
   },
   {
@@ -1612,45 +1594,6 @@
     "episode": 1,
     "title": "Freak Strike",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-6-episode-1-freak-strike",
-    "airDate": "2002-03-06",
-    "description": "The gang seizes upon an opportunity to make money with a weight-loss program that's sweeping the country.",
-    "characters": [
-      "Stan",
-      "Kyle",
-      "Cartman",
-      "Butters",
-      "Randy"
-    ],
-    "tags": [
-      "celebrity-parody",
-      "classic"
-    ]
-  },
-  {
-    "id": "S06E02",
-    "season": 6,
-    "episode": 2,
-    "title": "Jared Has Aides",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-6-episode-2-jared-has-aides",
-    "airDate": "2002-03-13",
-    "description": "The boys head to Aspen, where the slopes are superb and Stan gets into a showdown with the lodge's expert skier.",
-    "characters": [
-      "Stan",
-      "Kyle",
-      "Cartman",
-      "Butters",
-      "Randy"
-    ],
-    "tags": [
-      "classic"
-    ]
-  },
-  {
-    "id": "S06E03",
-    "season": 6,
-    "episode": 3,
-    "title": "Asspen",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-6-episode-3-asspen",
     "airDate": "2002-03-20",
     "description": "The gang decides to put Butters up as a guest on a talk show thinking that they will get special favors.",
     "characters": [
@@ -1667,19 +1610,57 @@
     ]
   },
   {
+    "id": "S06E02",
+    "season": 6,
+    "episode": 2,
+    "title": "Jared Has Aides",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-6-episode-2-jared-has-aides",
+    "airDate": "2002-03-06",
+    "description": "The gang seizes upon an opportunity to make money with a weight-loss program that's sweeping the country.",
+    "characters": [
+      "Stan",
+      "Kyle",
+      "Cartman",
+      "Butters",
+      "Randy"
+    ],
+    "tags": [
+      "celebrity-parody",
+      "classic"
+    ]
+  },
+  {
+    "id": "S06E03",
+    "season": 6,
+    "episode": 3,
+    "title": "Asspen",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-6-episode-3-asspen",
+    "airDate": "2002-03-13",
+    "description": "The boys head to Aspen, where the slopes are superb and Stan gets into a showdown with the lodge's expert skier.",
+    "characters": [
+      "Stan",
+      "Kyle",
+      "Cartman",
+      "Butters",
+      "Randy"
+    ],
+    "tags": [
+      "classic"
+    ]
+  },
+  {
     "id": "S06E04",
     "season": 6,
     "episode": 4,
     "title": "The New Terrance & Phillip Movie Trailer",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-6-episode-4-the-new-terrance-phillip-movie-trailer",
-    "airDate": "2002-03-27",
-    "description": "After learning how veal is made, the boys try to save some calves from the slaughterhouse.",
+    "airDate": "2002-04-03",
+    "description": "The boys look forward to the newest Terrance and Phillip movie.",
     "characters": [
       "Kyle",
       "Butters",
       "Stan",
-      "Cartman",
-      "Randy"
+      "Cartman"
     ],
     "tags": [
       "celebrity-parody",
@@ -1692,13 +1673,14 @@
     "episode": 5,
     "title": "Fun With Veal",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-6-episode-5-fun-with-veal",
-    "airDate": "2002-04-03",
-    "description": "The boys look forward to the newest Terrance and Phillip movie.",
+    "airDate": "2002-03-27",
+    "description": "After learning how veal is made, the boys try to save some calves from the slaughterhouse.",
     "characters": [
       "Kyle",
       "Butters",
       "Stan",
-      "Cartman"
+      "Cartman",
+      "Randy"
     ],
     "tags": [
       "celebrity-parody",
@@ -1879,8 +1861,8 @@
       "Randy"
     ],
     "tags": [
-      "classic",
-      "garrison-centric"
+      "garrison-centric",
+      "classic"
     ]
   },
   {
@@ -1949,16 +1931,17 @@
     "episode": 1,
     "title": "I'm a Little Bit Country",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-7-episode-1-i-m-a-little-bit-country",
-    "airDate": "2003-03-19",
-    "description": "The boys are abducted by aliens, who inform them that Earth is actually a reality show that is about to be canceled by intergalactic media moguls.",
+    "airDate": "2003-04-09",
+    "description": "The foul-mouthed youngsters return for a seventh season.",
     "characters": [
       "Stan",
       "Kyle",
       "Cartman",
-      "Kenny"
+      "Kenny",
+      "Butters",
+      "Randy"
     ],
     "tags": [
-      "celebrity-parody",
       "classic"
     ]
   },
@@ -2007,17 +1990,16 @@
     "episode": 4,
     "title": "Cancelled",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-7-episode-4-cancelled",
-    "airDate": "2003-04-09",
-    "description": "The foul-mouthed youngsters return for a seventh season.",
+    "airDate": "2003-03-19",
+    "description": "The boys are abducted by aliens, who inform them that Earth is actually a reality show that is about to be canceled by intergalactic media moguls.",
     "characters": [
       "Stan",
       "Kyle",
       "Cartman",
-      "Kenny",
-      "Butters",
-      "Randy"
+      "Kenny"
     ],
     "tags": [
+      "celebrity-parody",
       "classic"
     ]
   },
@@ -2101,9 +2083,9 @@
       "Tweek"
     ],
     "tags": [
+      "garrison-centric",
       "celebrity-parody",
-      "classic",
-      "garrison-centric"
+      "classic"
     ]
   },
   {
@@ -2173,17 +2155,8 @@
     "watchUrl": "https://www.wcoflix.tv/south-park-season-7-episode-12-all-about-the-mormons",
     "airDate": "2003-11-19",
     "description": "Mormon neighbors move into town, causing the citizens of South Park to become Mormons themselves.",
-    "characters": [
-      "Stan",
-      "Kyle",
-      "Cartman",
-      "Randy",
-      "Butters",
-      "Craig"
-    ],
+    "characters": [],
     "tags": [
-      "celebrity-parody",
-      "randy-centric",
       "classic"
     ]
   },
@@ -2266,10 +2239,7 @@
       "Craig",
       "Randy"
     ],
-    "tags": [
-      "butters-centric",
-      "cartman-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S08E02",
@@ -2277,60 +2247,6 @@
     "episode": 2,
     "title": "AWESOM-O",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-8-episode-2-awesom-o",
-    "airDate": "2004-03-24",
-    "description": "Steroids become an issue as Timmy, Jimmy and Cartman train for a sporting event.",
-    "characters": [
-      "Cartman",
-      "Stan",
-      "Kyle"
-    ],
-    "tags": [
-      "celebrity-parody"
-    ]
-  },
-  {
-    "id": "S08E03",
-    "season": 8,
-    "episode": 3,
-    "title": "Up the Down Steroid",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-8-episode-3-up-the-down-steroid",
-    "airDate": "2004-03-31",
-    "description": "\"The Passion of the Christ\" has an unusual effect on Stan, Cartman, Kyle and Kenny.",
-    "characters": [
-      "Cartman",
-      "Kenny",
-      "Stan",
-      "Kyle"
-    ],
-    "tags": []
-  },
-  {
-    "id": "S08E04",
-    "season": 8,
-    "episode": 4,
-    "title": "The Passion of the Jew",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-8-episode-4-the-passion-of-the-jew",
-    "airDate": "2004-04-07",
-    "description": "Stan tries to put together a group of competitive dancers to challenge some rivals from Orange County.",
-    "characters": [
-      "Cartman",
-      "Kenny",
-      "Stan",
-      "Kyle",
-      "Butters",
-      "Randy"
-    ],
-    "tags": [
-      "butters-centric",
-      "randy-centric"
-    ]
-  },
-  {
-    "id": "S08E05",
-    "season": 8,
-    "episode": 5,
-    "title": "You Got F'd in the A",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-8-episode-5-you-got-f-cked-in-the-ass",
     "airDate": "2004-04-14",
     "description": "Cartman disguises himself as a robot so he can learn secrets about Butters to use against him.",
     "characters": [
@@ -2345,11 +2261,82 @@
     ]
   },
   {
+    "id": "S08E03",
+    "season": 8,
+    "episode": 3,
+    "title": "Up the Down Steroid",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-8-episode-3-up-the-down-steroid",
+    "airDate": "2004-03-24",
+    "description": "Steroids become an issue as Timmy, Jimmy and Cartman train for a sporting event.",
+    "characters": [
+      "Cartman",
+      "Stan",
+      "Kyle"
+    ],
+    "tags": [
+      "celebrity-parody"
+    ]
+  },
+  {
+    "id": "S08E04",
+    "season": 8,
+    "episode": 4,
+    "title": "The Passion of the Jew",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-8-episode-4-the-passion-of-the-jew",
+    "airDate": "2004-03-31",
+    "description": "\"The Passion of the Christ\" has an unusual effect on Stan, Cartman, Kyle and Kenny.",
+    "characters": [
+      "Cartman",
+      "Kenny",
+      "Stan",
+      "Kyle"
+    ],
+    "tags": []
+  },
+  {
+    "id": "S08E05",
+    "season": 8,
+    "episode": 5,
+    "title": "You Got F'd in the A",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-8-episode-5-you-got-f-cked-in-the-ass",
+    "airDate": "2004-04-07",
+    "description": "Stan tries to put together a group of competitive dancers to challenge some rivals from Orange County.",
+    "characters": [
+      "Cartman",
+      "Kenny",
+      "Stan",
+      "Kyle",
+      "Butters",
+      "Randy"
+    ],
+    "tags": []
+  },
+  {
     "id": "S08E06",
     "season": 8,
     "episode": 6,
     "title": "Goobacks",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-8-episode-6-goobacks",
+    "airDate": "2004-04-28",
+    "description": "South Park becomes flooded with time travelers from the future.",
+    "characters": [
+      "Stan",
+      "Kyle",
+      "Cartman",
+      "Craig",
+      "Randy"
+    ],
+    "tags": [
+      "celebrity-parody",
+      "randy-centric"
+    ]
+  },
+  {
+    "id": "S08E07",
+    "season": 8,
+    "episode": 7,
+    "title": "The Jeffersons",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-8-episode-7-the-jeffersons",
     "airDate": "2004-04-21",
     "description": "A mysterious gentleman and his son create controversy in South Park.",
     "characters": [
@@ -2363,26 +2350,6 @@
     "tags": [
       "kenny-dies",
       "celebrity-parody"
-    ]
-  },
-  {
-    "id": "S08E07",
-    "season": 8,
-    "episode": 7,
-    "title": "The Jeffersons",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-8-episode-7-the-jeffersons",
-    "airDate": "2004-04-28",
-    "description": "South Park becomes flooded with time travelers from the future.",
-    "characters": [
-      "Stan",
-      "Kyle",
-      "Cartman",
-      "Craig",
-      "Randy"
-    ],
-    "tags": [
-      "celebrity-parody",
-      "randy-centric"
     ]
   },
   {
@@ -2440,9 +2407,7 @@
       "Kyle",
       "Butters"
     ],
-    "tags": [
-      "cartman-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S08E11",
@@ -2498,9 +2463,7 @@
       "Kenny",
       "Butters"
     ],
-    "tags": [
-      "cartman-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S08E14",
@@ -2558,10 +2521,7 @@
       "Butters",
       "Randy"
     ],
-    "tags": [
-      "cartman-centric",
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S09E03",
@@ -2673,10 +2633,7 @@
       "Butters",
       "Randy"
     ],
-    "tags": [
-      "cartman-centric",
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S09E09",
@@ -2694,9 +2651,7 @@
       "Butters",
       "Craig"
     ],
-    "tags": [
-      "butters-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S09E10",
@@ -2773,9 +2728,7 @@
       "Craig",
       "Tweek"
     ],
-    "tags": [
-      "cartman-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S09E14",
@@ -2813,9 +2766,7 @@
       "Butters",
       "Randy"
     ],
-    "tags": [
-      "cartman-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S10E02",
@@ -2833,9 +2784,7 @@
       "Craig",
       "Randy"
     ],
-    "tags": [
-      "cartman-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S10E03",
@@ -2904,9 +2853,7 @@
       "Butters",
       "Randy"
     ],
-    "tags": [
-      "cartman-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S10E07",
@@ -2986,9 +2933,7 @@
       "Butters",
       "Randy"
     ],
-    "tags": [
-      "cartman-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S10E11",
@@ -3028,9 +2973,9 @@
       "Butters"
     ],
     "tags": [
+      "garrison-centric",
       "trilogy",
-      "cartman-centric",
-      "garrison-centric"
+      "cartman-centric"
     ]
   },
   {
@@ -3047,9 +2992,9 @@
       "Butters"
     ],
     "tags": [
+      "garrison-centric",
       "trilogy",
-      "cartman-centric",
-      "garrison-centric"
+      "cartman-centric"
     ]
   },
   {
@@ -3198,10 +3143,7 @@
       "Butters",
       "Randy"
     ],
-    "tags": [
-      "cartman-centric",
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S11E08",
@@ -3391,9 +3333,7 @@
       "Butters",
       "Randy"
     ],
-    "tags": [
-      "cartman-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S12E04",
@@ -3430,8 +3370,8 @@
       "Butters"
     ],
     "tags": [
-      "cartman-centric",
-      "garrison-centric"
+      "garrison-centric",
+      "cartman-centric"
     ]
   },
   {
@@ -3447,9 +3387,7 @@
       "Kyle",
       "Randy"
     ],
-    "tags": [
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S12E07",
@@ -3467,10 +3405,7 @@
       "Kenny",
       "Craig"
     ],
-    "tags": [
-      "butters-centric",
-      "cartman-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S12E08",
@@ -3480,18 +3415,8 @@
     "watchUrl": "https://www.wcoflix.tv/south-park-season-12-episode-8-the-china-problem",
     "airDate": "2008-10-08",
     "description": "Butters stands with Cartman as he confronts the Chinese after a tragic event.",
-    "characters": [
-      "Stan",
-      "Kyle",
-      "Cartman",
-      "Butters",
-      "Kenny"
-    ],
-    "tags": [
-      "celebrity-parody",
-      "butters-centric",
-      "cartman-centric"
-    ]
+    "characters": [],
+    "tags": []
   },
   {
     "id": "S12E09",
@@ -3528,10 +3453,7 @@
       "Craig",
       "Randy"
     ],
-    "tags": [
-      "cartman-centric",
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S12E11",
@@ -3662,9 +3584,7 @@
       "Butters",
       "Randy"
     ],
-    "tags": [
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S13E04",
@@ -3738,10 +3658,7 @@
       "Cartman",
       "Butters"
     ],
-    "tags": [
-      "butters-centric",
-      "cartman-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S13E08",
@@ -4026,10 +3943,7 @@
       "Butters",
       "Kenny"
     ],
-    "tags": [
-      "butters-centric",
-      "cartman-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S14E09",
@@ -4047,9 +3961,7 @@
       "Kenny",
       "Randy"
     ],
-    "tags": [
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S14E10",
@@ -4131,7 +4043,7 @@
     "id": "S14E14",
     "season": 14,
     "episode": 14,
-    "title": "Cr\u00e8me Fra\u00eeche",
+    "title": "Crème Fraîche",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-14-episode-14-crme-fraiche",
     "airDate": "2010-11-17",
     "description": "In the 14th-season finale, Randy's addiction to the Food Network has a detrimental effect on his family.",
@@ -4216,10 +4128,7 @@
       "Craig",
       "Randy"
     ],
-    "tags": [
-      "cartman-centric",
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S15E05",
@@ -4331,9 +4240,7 @@
       "Kenny",
       "Craig"
     ],
-    "tags": [
-      "cartman-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S15E11",
@@ -4348,9 +4255,7 @@
       "Cartman",
       "Randy"
     ],
-    "tags": [
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S15E12",
@@ -4379,7 +4284,7 @@
     "title": "A History Channel Thanksgiving",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-15-episode-13-a-history-channel-thanksgiving",
     "airDate": "2011-11-09",
-    "description": "The boys learn what really happened at the first Thanksgiving\u2014including an extraterrestrial presence\u2014from a TV documentary.",
+    "description": "The boys learn what really happened at the first Thanksgiving—including an extraterrestrial presence—from a TV documentary.",
     "characters": [
       "Stan",
       "Kyle",
@@ -4428,10 +4333,7 @@
       "Randy",
       "Butters"
     ],
-    "tags": [
-      "cartman-centric",
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S16E02",
@@ -4440,7 +4342,7 @@
     "title": "Cash for Gold",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-16-episode-2-cash-for-gold-2",
     "airDate": "2012-03-21",
-    "description": "Cartman targets a specific\u2014and vulnerable\u2014clientele when he starts his own shopping channel for gems, while Stan researches the value of a piece of jewelry that was a gift from his grandfather.",
+    "description": "Cartman targets a specific—and vulnerable—clientele when he starts his own shopping channel for gems, while Stan researches the value of a piece of jewelry that was a gift from his grandfather.",
     "characters": [
       "Stan",
       "Kyle",
@@ -4449,9 +4351,7 @@
       "Kenny",
       "Randy"
     ],
-    "tags": [
-      "cartman-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S16E03",
@@ -4546,9 +4446,7 @@
       "Butters",
       "Craig"
     ],
-    "tags": [
-      "cartman-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S16E08",
@@ -4604,10 +4502,7 @@
       "Cartman",
       "Randy"
     ],
-    "tags": [
-      "cartman-centric",
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S16E11",
@@ -4726,9 +4621,7 @@
       "Tweek",
       "Randy"
     ],
-    "tags": [
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S17E03",
@@ -4946,10 +4839,7 @@
       "Craig",
       "Randy"
     ],
-    "tags": [
-      "cartman-centric",
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S18E04",
@@ -4999,9 +4889,7 @@
       "Butters",
       "Randy"
     ],
-    "tags": [
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S18E07",
@@ -5043,6 +4931,27 @@
     "tags": []
   },
   {
+    "id": "S18E09",
+    "season": 18,
+    "episode": 9,
+    "title": "#REHASH",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-16-episode-9-rehash",
+    "airDate": "2014-12-03",
+    "description": "Randy's forced to perform again after Stan spends all the Marsh's money on freemium games; Kyle gets upset when Ike doesn't want to play with him anymore.",
+    "characters": [
+      "Stan",
+      "Kyle",
+      "Cartman",
+      "Kenny",
+      "Butters",
+      "Randy"
+    ],
+    "tags": [
+      "trilogy",
+      "randy-centric"
+    ]
+  },
+  {
     "id": "S18E10",
     "season": 18,
     "episode": 10,
@@ -5080,10 +4989,7 @@
       "Randy",
       "PC Principal"
     ],
-    "tags": [
-      "cartman-centric",
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S19E02",
@@ -5104,7 +5010,6 @@
       "Randy"
     ],
     "tags": [
-      "butters-centric",
       "garrison-centric"
     ]
   },
@@ -5125,9 +5030,7 @@
       "PC Principal",
       "Randy"
     ],
-    "tags": [
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S19E04",
@@ -5144,9 +5047,7 @@
       "Butters",
       "Randy"
     ],
-    "tags": [
-      "cartman-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S19E05",
@@ -5184,10 +5085,7 @@
       "Tweek",
       "PC Principal"
     ],
-    "tags": [
-      "cartman-centric",
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S19E07",
@@ -5290,8 +5188,6 @@
       "PC Principal"
     ],
     "tags": [
-      "cartman-centric",
-      "randy-centric",
       "garrison-centric"
     ]
   },
@@ -5330,7 +5226,6 @@
       "Randy"
     ],
     "tags": [
-      "cartman-centric",
       "garrison-centric"
     ]
   },
@@ -5350,9 +5245,7 @@
       "PC Principal",
       "Butters"
     ],
-    "tags": [
-      "butters-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S20E05",
@@ -5373,9 +5266,7 @@
       "PC Principal",
       "Kyle"
     ],
-    "tags": [
-      "garrison-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S20E06",
@@ -5391,7 +5282,6 @@
       "Randy"
     ],
     "tags": [
-      "cartman-centric",
       "garrison-centric"
     ]
   },
@@ -5430,8 +5320,8 @@
       "PC Principal"
     ],
     "tags": [
-      "celebrity-parody",
-      "garrison-centric"
+      "garrison-centric",
+      "celebrity-parody"
     ]
   },
   {
@@ -5488,10 +5378,7 @@
       "Butters",
       "Randy"
     ],
-    "tags": [
-      "cartman-centric",
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S21E02",
@@ -5607,7 +5494,6 @@
       "Butters"
     ],
     "tags": [
-      "cartman-centric",
       "garrison-centric"
     ]
   },
@@ -5666,8 +5552,8 @@
       "Randy"
     ],
     "tags": [
-      "season-finale",
-      "garrison-centric"
+      "garrison-centric",
+      "season-finale"
     ]
   },
   {
@@ -5687,10 +5573,7 @@
       "Randy",
       "PC Principal"
     ],
-    "tags": [
-      "cartman-centric",
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S22E02",
@@ -5707,10 +5590,7 @@
       "Kyle",
       "Randy"
     ],
-    "tags": [
-      "butters-centric",
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S22E03",
@@ -5851,7 +5731,7 @@
     "id": "S22E10",
     "season": 22,
     "episode": 10,
-    "title": "Chickenpox",
+    "title": "Bike Parade",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-22-episode-10-chickenpox",
     "airDate": "2018-12-12",
     "description": "The Bike Parade is still on, but the boys' chance of winning is in jeopardy when Kenny resists commercialism in solidarity with the Amazon Fulfillment Center's striking workers.",
@@ -5884,10 +5764,7 @@
       "Kyle",
       "Randy"
     ],
-    "tags": [
-      "cartman-centric",
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S23E02",
@@ -5925,10 +5802,7 @@
       "PC Principal",
       "Randy"
     ],
-    "tags": [
-      "cartman-centric",
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S23E04",
@@ -5946,10 +5820,7 @@
       "PC Principal",
       "Randy"
     ],
-    "tags": [
-      "cartman-centric",
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S23E05",
@@ -6005,9 +5876,7 @@
       "Kyle",
       "PC Principal"
     ],
-    "tags": [
-      "cartman-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S23E08",
@@ -6023,9 +5892,7 @@
       "Kyle",
       "Kenny"
     ],
-    "tags": [
-      "cartman-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S23E09",
@@ -6095,7 +5962,6 @@
       "Randy"
     ],
     "tags": [
-      "cartman-centric",
       "garrison-centric"
     ]
   },
@@ -6115,9 +5981,7 @@
       "Butters",
       "PC Principal"
     ],
-    "tags": [
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S25E03",
@@ -6141,9 +6005,7 @@
     "airDate": "2022-03-02",
     "description": "A lot is riding on Butter's ability to crush the competition in the all-important dressage championship.",
     "characters": [],
-    "tags": [
-      "butters-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S25E05",
@@ -6154,10 +6016,7 @@
     "airDate": "2022-03-09",
     "description": "The boys find out that the joys of playing Airsoft come with the challenges of dealing with teenagers.",
     "characters": [],
-    "tags": [
-      "cartman-centric",
-      "randy-centric"
-    ]
+    "tags": []
   },
   {
     "id": "S25E06",
@@ -6201,7 +6060,7 @@
     "id": "S26E03",
     "season": 26,
     "episode": 3,
-    "title": "Japanese Toilets",
+    "title": "Japanese Toilet",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-26-episode-3-japanese-toilets",
     "airDate": "2023-03-01",
     "description": "South Park learns about the wonders of Japanese toilets.",
@@ -6223,7 +6082,7 @@
     "id": "S26E05",
     "season": 26,
     "episode": 5,
-    "title": "Dikinmisses's Hot Dogs",
+    "title": "DikinBaus Hot Dogs",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-26-episode-5-dikimbles-hot-dogs",
     "airDate": "2023-03-22",
     "description": "The South Park boys renovate and open an historic restaurant in Colorado.",
@@ -6240,15 +6099,15 @@
     "description": "Spring Break is an excuse for Garrison to jump back into his former depraved lifestyle.",
     "characters": [],
     "tags": [
-      "season-finale",
-      "garrison-centric"
+      "garrison-centric",
+      "season-finale"
     ]
   },
   {
     "id": "S27E01",
     "season": 27,
     "episode": 1,
-    "title": "Sermon on the Mount",
+    "title": "Sermon on the 'Mount",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-27-episode-1-sermon-on-the-mount",
     "airDate": "2025-07-23",
     "description": "When the residents of South Park face their possible demise, Jesus returns to give them an important message.",
@@ -6281,7 +6140,7 @@
     "id": "S27E04",
     "season": 27,
     "episode": 4,
-    "title": "Wok is Dead",
+    "title": "Wok Is Dead",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-27-episode-4-wok-is-dead",
     "airDate": "2025-09-03",
     "description": "Butters experiences the reality of tariffs when he has to buy a Labubu doll for his girlfriend's birthday.",
@@ -6297,20 +6156,20 @@
     "airDate": "2025-09-24",
     "description": "Kyle and Cartman are at odds when a prediction markets app gets popular with their fellow students.",
     "characters": [],
-    "tags": []
-  },
-  {
-    "id": "S27E06",
-    "season": 27,
-    "episode": 6,
-    "title": "Twisted Christian",
-    "watchUrl": "https://www.wcoflix.tv/south-park-season-27-episode-6-twisted-christian",
-    "airDate": "",
-    "description": "",
-    "characters": [],
     "tags": [
       "season-finale"
     ]
+  },
+  {
+    "id": "S28E01",
+    "season": 28,
+    "episode": 1,
+    "title": "Twisted Christian",
+    "watchUrl": "https://www.wcoflix.tv/south-park-season-27-episode-6-twisted-christian",
+    "airDate": "2025-10-15",
+    "description": "Cartman is possessed and may be the key to stopping the Antichrist.",
+    "characters": [],
+    "tags": []
   },
   {
     "id": "S28E02",
@@ -6341,7 +6200,7 @@
     "title": "Turkey Trot",
     "watchUrl": "https://www.wcoflix.tv/south-park-season-28-episode-4-turkey-trot",
     "airDate": "2025-11-26",
-    "description": "The town's annual Turkey Trot turns chaotic when Cartman uses questionable cutting-edge science to win the race.",
+    "description": "The town's annual Turkey Trot turns chaotic when Cartman uses questionable \"science\" to win the race.",
     "characters": [],
     "tags": []
   },
